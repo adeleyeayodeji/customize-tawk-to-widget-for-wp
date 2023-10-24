@@ -47,9 +47,19 @@ class AdvanceTawkToWidget extends CustomiseTawkToWidget
         wp_enqueue_style('advancetawktocustomise-style', ADVANCETAWKTOWIDGET_PLUGIN_URL . '/assets/css/style.css', array(), ADVANCETAWKTOWIDGET_VERSION);
         //script
         wp_enqueue_script('advancetawktocustomise-js', ADVANCETAWKTOWIDGET_PLUGIN_URL . '/assets/js/main.js', array('jquery'), ADVANCETAWKTOWIDGET_VERSION, true);
+
+        //get the settings
+        $tawktocustomise_settings = get_option('tawktocustomise_settings', [
+            'widget_position' => 'topRight',
+            'gradient_left' => '#27b469',
+            'gradient_right' => '#30c651',
+            'status' => 'active',
+        ]);
+
         wp_localize_script('advancetawktocustomise-js', 'advancetawktocustomise', array(
             'ajaxurl' => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('advancetawktocustomise'),
+            'tawktocustomise_settings' => $tawktocustomise_settings
         ));
     }
 
