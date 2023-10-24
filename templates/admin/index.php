@@ -59,11 +59,31 @@ $tawktocustomise_settings = get_option('tawktocustomise_settings', [
             </div>
         </div>
         <div class="customise-ads-area">
-            <div class="ads-1">
-                <p>
-                    ADS
-                </p>
+            <h2 class="customise-ads-header-title">OTHER AMAZING PLUGINS</h2>
+            <div class="customise-ads customise-ads-1">
+                <img src="https://ps.w.org/codedeyo-google-trends-for-bloggers/assets/banner-772x250.png?rev=2928244" alt="Google Trends for WP" class="customise-ads-image">
+                <div class="customise-ads-actions">
+                    <h3>Google Trends for WP</h3>
+                    <div class="customise-ads-sub-action">
+                        <a href="javascript:;" class="button-primary customise-ads-demo-video" data-video="https://www.youtube.com/embed/yJYo8ifhyyE?si=iZ2aI5LdCFpFJJYt">
+                            Demo
+                        </a>
+                        <a href="javascript:;" class="button customise-ads-learn-more" data-plugin-slug="codedeyo-google-trends-for-bloggers">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Modal dialog -->
+    <div class="modal">
+        <div class="modal-content">
+            <p class="close-action">
+                <span class="close-button">×</span>
+            </p>
+            <iframe width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
 </div>

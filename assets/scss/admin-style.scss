@@ -126,11 +126,105 @@
     width: 100%;
   }
   .customise-tawk-to-main-body {
-    width: 100%;
+    width: 538px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
   }
 
   .customise-ads-area {
+    width: 775px;
+  }
+
+  .customise-ads-header-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px;
+    margin-bottom: 15px;
+    color: #545454;
+  }
+
+  .customise-ads-image {
+    height: auto;
+    max-height: 170px;
     width: 100%;
+    border-radius: 8px;
+  }
+
+  .customise-ads-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .customise-ads {
+    width: fit-content;
+    padding: 7px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+    a {
+      height: fit-content !important;
+    }
+  }
+
+  .trigger {
+    text-align: center;
+    padding: 7px 13px;
+    background: #3e3e3e;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: cursive;
+  }
+
+  .modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  }
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: auto;
+    border-radius: 0.5rem;
+
+    .close-action {
+      margin-top: -46px;
+      margin-bottom: 50px;
+    }
+  }
+  .close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  .close-button:hover {
+    background-color: darkgray;
+  }
+  .show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
   }
 }
 
@@ -143,4 +237,105 @@
 #wpcontent,
 #wpfooter {
   margin-left: 143px !important;
+}
+
+.customise-ads-sub-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  //first a
+  a:first-child {
+    margin-right: 10px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .customise-tawk-to-widget-container {
+    &--body {
+      display: block !important;
+    }
+
+    .customise-tawk-to-main-body {
+      width: 100%;
+    }
+
+    .customise-ads-area {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .customise-tawk-to-widget-container {
+    &--body {
+      display: block !important;
+    }
+
+    .customise-tawk-to-main-body {
+      width: 100%;
+    }
+
+    .customise-ads-area {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .customise-tawk-to-widget-container {
+    &--body {
+      display: block !important;
+    }
+
+    .customise-tawk-to-main-body {
+      width: 100%;
+    }
+
+    .customise-ads-area {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .customise-tawk-to-widget-container {
+    &--body {
+      display: flex !important;
+    }
+
+    .customise-tawk-to-main-body {
+      width: 538px;
+    }
+
+    .customise-ads-area {
+      width: 775px;
+      margin-top: 0px;
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .customise-tawk-to-widget-container {
+    &--body {
+      display: flex !important;
+    }
+
+    .customise-tawk-to-main-body {
+      width: 538px;
+    }
+
+    .customise-ads-area {
+      width: 775px;
+      margin-top: 0px;
+    }
+  }
 }

@@ -113,4 +113,59 @@ jQuery(document).ready(function ($) {
       });
     }
   );
+
+  var modal = document.querySelector(".modal");
+  var closeButton = document.querySelector(".close-button");
+
+  function toggleModal() {
+    modal.classList.toggle("show-modal");
+    //check if show modal is class or not
+    if (!modal.classList.contains("show-modal")) {
+      //remove iframe src
+      modal.querySelector("iframe").removeAttribute("src");
+    }
+  }
+
+  function windowOnClick(event) {
+    if (event.target === modal) {
+      toggleModal();
+    }
+  }
+
+  if (closeButton) closeButton.addEventListener("click", toggleModal);
+  window.addEventListener("click", windowOnClick);
+
+  //get all .customise-ads-demo-video
+  var $demoVideo = $(".customise-ads-demo-video");
+  //loop through each .customise-ads-demo-video
+  $demoVideo.each(function () {
+    //get current .customise-ads-demo-video
+    var $this = $(this);
+    $this.click(function (e) {
+      e.preventDefault();
+      //get current .customise-ads-demo-video data
+      var youTubeVideo = $this.data("video");
+      //check if video is not empty
+      if (youTubeVideo != "") {
+        //set the iframe src
+        $(modal).find("iframe").attr("src", youTubeVideo);
+        //show the modal
+        toggleModal();
+      }
+    });
+  });
+
+  //get all .customise-ads-learn-more
+  $(".customise-ads-learn-more").each(function (index, element) {
+    //enable click event
+    $(element).click(function (e) {
+      e.preventDefault();
+      //get data plugin-slug
+      var pluginSlug = $(element).data("plugin-slug");
+      tb_show(
+        "",
+        `plugin-install.php?tab=plugin-information&plugin=${pluginSlug}&TB_iframe=true&width=772&height=689`
+      );
+    });
+  });
 });

@@ -31,6 +31,9 @@ document.addEventListener(
   () => {
     window.Tawk_API = window.Tawk_API || {};
     window.Tawk_API.onLoad = function () {
+      //display advancetawktocustomise
+      document.querySelector(".advancetawktocustomise").style.display = "block";
+      //hideWidget
       window.$_Tawk.hideWidget();
     };
 
@@ -48,10 +51,6 @@ document.addEventListener(
     window.Tawk_API.onChatMaximized = function () {
       document.querySelector(".advancetawktocustomise").style.display = "none";
     };
-
-    setInterval(() => {
-      customiseTawkToWidget();
-    }, 500);
   },
   false
 );

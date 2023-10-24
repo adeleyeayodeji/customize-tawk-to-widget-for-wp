@@ -69,6 +69,12 @@ class AdvanceTawkToWidget extends CustomiseTawkToWidget
     public static function admin_enqueue_scripts()
     {
         wp_enqueue_script('jquery');
+        wp_enqueue_style('thickbox');
+        wp_enqueue_script('thickbox');
+        //magnific-popup
+        wp_enqueue_style('magnific-popup', ADVANCETAWKTOWIDGET_PLUGIN_URL . '/assets/css/magnific-popup.css', array(), ADVANCETAWKTOWIDGET_VERSION);
+        //js
+        wp_enqueue_script('magnific-popup', ADVANCETAWKTOWIDGET_PLUGIN_URL . '/assets/js/magnific-popup.js', array('jquery'), ADVANCETAWKTOWIDGET_VERSION, true);
         //iziToast.min.css
         wp_enqueue_style('iziToast.min.css', ADVANCETAWKTOWIDGET_PLUGIN_URL . '/assets/css/iziToast.min.css', array(), ADVANCETAWKTOWIDGET_VERSION);
         //css
