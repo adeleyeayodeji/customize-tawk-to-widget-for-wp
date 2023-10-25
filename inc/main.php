@@ -35,6 +35,19 @@ class AdvanceTawkToWidget extends CustomiseTawkToWidget
         add_action('wp_footer', array(self::class, 'tawk_to_widget'), 99999999999999999999);
         //admin menu
         add_action('admin_menu', array(self::class, 'admin_menu'));
+        //add plugin settings link
+        add_filter('plugin_action_links_' . ADVANCETAWKTOWIDGET_PLUGIN_BASENAME, array(self::class, 'plugin_action_links'));
+    }
+
+    /**
+     * Add plugin action links
+     * @param array $links
+     * @return array
+     */
+    public static function plugin_action_links($links)
+    {
+        $links[] = '<a href="' . esc_url(admin_url('admin.php?page=customize-tawk-to-widget')) . '">' . __('Settings', ADVANCETAWKTOWIDGET_PLUGIN_TEXTDOMAIN) . '</a>';
+        return $links;
     }
 
     /**

@@ -4,7 +4,7 @@ Donate link: https://adeleyeayodeji.com
 Tags: tawk.to, tawkto, customize, chat, chatbot
 Requires at least: 3.0.0
 Tested up to: 6.2
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -16,6 +16,9 @@ This plugin allows you to customize the Tawk.to widget.
 Personalize your Tawk.to widget's appearance and functionality with Customize Tawk.to Widget and improve user experience by modifying its color scheme, text, positioning, and behavior.
 
 == Changelog ==
+
+= 1.3.1 =
+Added update
 
 = 1.3.0 =
 Added new update
