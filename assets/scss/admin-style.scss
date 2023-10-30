@@ -16,7 +16,7 @@
   &--body {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: normal;
 
     &--site-widget-status {
       display: flex;
@@ -129,7 +129,7 @@
     width: 538px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: normal;
     padding-left: 10px;
   }
 
@@ -312,7 +312,7 @@
     }
 
     .customise-tawk-to-main-body {
-      width: 538px;
+      width: 410px;
     }
 
     .customise-ads-area {
@@ -330,7 +330,7 @@
     }
 
     .customise-tawk-to-main-body {
-      width: 538px;
+      width: 410px;
     }
 
     .customise-ads-area {

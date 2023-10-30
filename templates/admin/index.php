@@ -61,6 +61,20 @@ $tawktocustomise_settings = get_option('tawktocustomise_settings', [
         <div class="customise-ads-area">
             <h2 class="customise-ads-header-title">OTHER AMAZING PLUGINS</h2>
             <div class="customise-ads customise-ads-1">
+                <img src="<?php echo esc_url(ADVANCETAWKTOWIDGET_PLUGIN_URL . '/assets/img/terminal-africa.jpg') ?>" alt="Termianl Africa" class="customise-ads-image">
+                <div class="customise-ads-actions">
+                    <h3>Termianl Africa</h3>
+                    <div class="customise-ads-sub-action">
+                        <a href="javascript:;" class="button-primary customise-ads-demo-video" data-video="https://www.youtube.com/embed/S4Vwe07EEqQ">
+                            Demo
+                        </a>
+                        <a href="javascript:;" class="button customise-ads-learn-more" data-plugin-slug="terminal-africa">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="customise-ads customise-ads-1" style="margin-top: 20px;">
                 <img src="https://ps.w.org/codedeyo-google-trends-for-bloggers/assets/banner-772x250.png?rev=2928244" alt="Google Trends for WP" class="customise-ads-image">
                 <div class="customise-ads-actions">
                     <h3>Google Trends for WP</h3>
