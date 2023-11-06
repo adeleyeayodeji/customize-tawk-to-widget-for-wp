@@ -6,8 +6,8 @@
  * Author: Adeleye Ayodeji
  * Author URI: https://adeleyeayodeji.com
  * Description: This plugin allows you to customize the Tawk.to widget.
- * Version: 1.3.2
- * License: 1.3.2
+ * Version: 1.3.3
+ * License: 1.3.3
  * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
  * text-domain: customize-tawk-to-widget
  */
