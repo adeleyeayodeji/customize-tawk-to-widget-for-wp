@@ -65,10 +65,10 @@ $tawktocustomise_settings = get_option('tawktocustomise_settings', [
                 <div class="customise-ads-actions">
                     <h3>Terminal Africa</h3>
                     <div class="customise-ads-sub-action">
-                        <a href="javascript:;" class="button-primary customise-ads-demo-video" data-video="https://www.youtube.com/embed/S4Vwe07EEqQ">
+                        <a href="javascript:;" class="button-primary customise-ads-demo-video" data-type="47mu8w3" data-video="https://www.youtube.com/embed/S4Vwe07EEqQ">
                             Demo
                         </a>
-                        <a href="javascript:;" class="button customise-ads-learn-more" data-plugin-slug="terminal-africa">
+                        <a href="javascript:;" class="button customise-ads-learn-more" data-type="47mu8w3" data-plugin-slug="terminal-africa">
                             Learn More
                         </a>
                     </div>
@@ -79,10 +79,10 @@ $tawktocustomise_settings = get_option('tawktocustomise_settings', [
                 <div class="customise-ads-actions">
                     <h3>Google Trends for WP</h3>
                     <div class="customise-ads-sub-action">
-                        <a href="javascript:;" class="button-primary customise-ads-demo-video" data-video="https://www.youtube.com/embed/yJYo8ifhyyE?si=iZ2aI5LdCFpFJJYt">
+                        <a href="javascript:;" class="button-primary customise-ads-demo-video" data-type="3QI5HBW" data-video="https://www.youtube.com/embed/yJYo8ifhyyE?si=iZ2aI5LdCFpFJJYt">
                             Demo
                         </a>
-                        <a href="javascript:;" class="button customise-ads-learn-more" data-plugin-slug="codedeyo-google-trends-for-bloggers">
+                        <a href="javascript:;" class="button customise-ads-learn-more" data-type="3QI5HBW" data-plugin-slug="codedeyo-google-trends-for-bloggers">
                             Learn More
                         </a>
                     </div>

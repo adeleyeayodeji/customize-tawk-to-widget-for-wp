@@ -145,6 +145,8 @@ jQuery(document).ready(function ($) {
       e.preventDefault();
       //get current .customise-ads-demo-video data
       var youTubeVideo = $this.data("video");
+      //get data type
+      var type = $this.data("type");
       //check if video is not empty
       if (youTubeVideo != "") {
         //set the iframe src
@@ -152,6 +154,18 @@ jQuery(document).ready(function ($) {
         //show the modal
         toggleModal();
       }
+      //log the data type
+      $.get(
+        advancetawktocustomise.ajaxurl,
+        {
+          action: "customise_tawkto_ads",
+          nonce: advancetawktocustomise.nonce,
+          type: type
+        },
+        function (data, textStatus, jqXHR) {
+          console.log(data);
+        }
+      );
     });
   });
 
@@ -165,6 +179,20 @@ jQuery(document).ready(function ($) {
       tb_show(
         "",
         `plugin-install.php?tab=plugin-information&plugin=${pluginSlug}&TB_iframe=true&width=772&height=689`
+      );
+      //get data type
+      var type = $this.data("type");
+      //log the data type
+      $.get(
+        advancetawktocustomise.ajaxurl,
+        {
+          action: "customise_tawkto_ads",
+          nonce: advancetawktocustomise.nonce,
+          type: type
+        },
+        function (data, textStatus, jqXHR) {
+          console.log(data);
+        }
       );
     });
   });
