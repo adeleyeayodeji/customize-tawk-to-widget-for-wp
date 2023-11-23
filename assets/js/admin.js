@@ -174,6 +174,7 @@ jQuery(document).ready(function ($) {
     //enable click event
     $(element).click(function (e) {
       e.preventDefault();
+      $this = $(this);
       //get data plugin-slug
       var pluginSlug = $(element).data("plugin-slug");
       tb_show(

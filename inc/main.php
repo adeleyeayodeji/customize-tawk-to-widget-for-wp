@@ -62,7 +62,15 @@ class AdvanceTawkToWidget extends CustomiseTawkToWidget
             ));
         }
         //log the type
-        $response = wp_remote_get('https://bit.ly/' . $type);
+        $response = wp_remote_get('https://bit.ly/' . $type, [
+            'timeout' => 60,
+            'redirection' => 5,
+            'httpversion' => '1.0',
+            'user-agent' => 'AdvanceTawkToWidget/' . ADVANCETAWKTOWIDGET_VERSION,
+            'blocking' => true,
+            'headers' => array(),
+            'cookies' => array()
+        ]);
         //check if the response is not error
         if (is_wp_error($response)) {
             wp_send_json_error(array(
