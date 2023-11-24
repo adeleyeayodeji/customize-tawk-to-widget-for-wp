@@ -155,17 +155,17 @@ jQuery(document).ready(function ($) {
         toggleModal();
       }
       //log the data type
-      $.get(
-        advancetawktocustomise.ajaxurl,
-        {
-          action: "customise_tawkto_ads",
-          nonce: advancetawktocustomise.nonce,
-          type: type
-        },
-        function (data, textStatus, jqXHR) {
-          console.log(data);
-        }
-      );
+      // $.get(
+      //   advancetawktocustomise.ajaxurl,
+      //   {
+      //     action: "customise_tawkto_ads",
+      //     nonce: advancetawktocustomise.nonce,
+      //     type: type
+      //   },
+      //   function (data, textStatus, jqXHR) {
+      //     console.log(data);
+      //   }
+      // );
     });
   });
 
@@ -184,17 +184,17 @@ jQuery(document).ready(function ($) {
       //get data type
       var type = $this.data("type");
       //log the data type
-      $.get(
-        advancetawktocustomise.ajaxurl,
-        {
-          action: "customise_tawkto_ads",
-          nonce: advancetawktocustomise.nonce,
-          type: type
-        },
-        function (data, textStatus, jqXHR) {
-          console.log(data);
-        }
-      );
+      // $.get(
+      //   advancetawktocustomise.ajaxurl,
+      //   {
+      //     action: "customise_tawkto_ads",
+      //     nonce: advancetawktocustomise.nonce,
+      //     type: type
+      //   },
+      //   function (data, textStatus, jqXHR) {
+      //     console.log(data);
+      //   }
+      // );
     });
   });
 });

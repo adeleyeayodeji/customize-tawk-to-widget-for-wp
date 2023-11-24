@@ -65,7 +65,7 @@ $tawktocustomise_settings = get_option('tawktocustomise_settings', [
                 <div class="customise-ads-actions">
                     <h3>Terminal Africa</h3>
                     <div class="customise-ads-sub-action">
-                        <a href="javascript:;" class="button-primary customise-ads-demo-video" data-type="47mu8w3" data-video="https://www.youtube.com/embed/S4Vwe07EEqQ">
+                        <a href="javascript:;" class="button-primary customise-ads-demo-video" data-type="47mu8w3" data-video="https://www.youtube.com/embed/gsk1AZ4hKYc">
                             Demo
                         </a>
                         <a href="javascript:;" class="button customise-ads-learn-more" data-type="47mu8w3" data-plugin-slug="terminal-africa">

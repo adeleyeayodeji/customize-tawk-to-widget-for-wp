@@ -127,10 +127,15 @@ class AdvanceTawkToWidget extends CustomiseTawkToWidget
      */
     public static function admin_enqueue_scripts()
     {
+        //if not set isset($_GET['page'])
+        if (!isset($_GET['page'])) {
+            return;
+        }
         //check if current page is admin.php?page=customize-tawk-to-widget
         if (isset($_GET['page']) && $_GET['page'] != 'customize-tawk-to-widget') {
             return;
         }
+
         wp_enqueue_script('jquery');
         wp_enqueue_style('thickbox');
         wp_enqueue_script('thickbox');
