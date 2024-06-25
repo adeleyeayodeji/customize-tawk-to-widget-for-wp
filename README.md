@@ -1,5 +1,5 @@
 === Customize Tawk.to Widget ===
-Contributors: Adeleye Ayodeji, biggidroid
+Contributors: biggidroid
 Donate link: https://adeleyeayodeji.com
 Tags: tawk.to, tawkto, customize, chat, chatbot
 Requires at least: 3.0.0
