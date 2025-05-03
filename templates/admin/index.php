@@ -61,14 +61,14 @@ $tawktocustomise_settings = get_option('tawktocustomise_settings', [
         <div class="customise-ads-area">
             <h2 class="customise-ads-header-title">OTHER AMAZING PLUGINS</h2>
             <div class="customise-ads customise-ads-1">
-                <img src="<?php echo esc_url(ADVANCETAWKTOWIDGET_PLUGIN_URL . '/assets/img/terminal-africa.jpg') ?>" alt="Termianl Africa" class="customise-ads-image">
+                <img src="<?php echo esc_url(ADVANCETAWKTOWIDGET_PLUGIN_URL . '/assets/img/ade-custom-shipping.png') ?>" alt="Ade Custom Shipping" class="customise-ads-image">
                 <div class="customise-ads-actions">
-                    <h3>Terminal Africa</h3>
+                    <h3>Ade Custom Shipping</h3>
                     <div class="customise-ads-sub-action">
-                        <a href="javascript:;" class="button-primary customise-ads-demo-video" data-type="47mu8w3" data-video="https://www.youtube.com/embed/gsk1AZ4hKYc">
+                        <a href="javascript:;" class="button-primary customise-ads-demo-video" data-type="47mu8w3" data-video="https://www.youtube.com/embed/VIXxb8ub9FM">
                             Demo
                         </a>
-                        <a href="javascript:;" class="button customise-ads-learn-more" data-type="47mu8w3" data-plugin-slug="terminal-africa">
+                        <a href="javascript:;" class="button customise-ads-learn-more" data-type="47mu8w3" data-plugin-slug="ade-custom-shipping">
                             Learn More
                         </a>
                     </div>
