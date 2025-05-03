@@ -10,6 +10,7 @@
  * License: 1.3.7
  * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
  * text-domain: customize-tawk-to-widget
+ * Requires Plugins: tawkto-live-chat
  */
 
 if (!defined('ABSPATH')) {

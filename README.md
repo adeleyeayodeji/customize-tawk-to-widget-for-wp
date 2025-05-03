@@ -3,7 +3,7 @@ Contributors: biggidroid
 Donate link: https://adeleyeayodeji.com
 Tags: tawk.to, tawkto, customize, chat, chatbot
 Requires at least: 3.0.0
-Tested up to: 6.5
+Tested up to: 6.7
 Stable tag: 1.3.7
 Requires PHP: 7.0
 License: GPLv2 or later
